@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "745934588420",
+    "project_id": "nouvelle-a9646",
+    "storage_bucket": "nouvelle-a9646.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745934588420:android:163cbc7f7b61873c988351",
+        "android_client_info": {
+          "package_name": "com.example.nouvelle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745934588420-kut491l3rhita6e7eunrc54e7fkvat5b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCPVgNxvs3wvFZAzYFR75PDsBp4VuNr-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745934588420-kut491l3rhita6e7eunrc54e7fkvat5b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
