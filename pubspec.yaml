@@ -35,6 +35,7 @@ dependencies:
   cloud_firestore:
   firebase_auth:
   iconsax:
+  iconly: ^1.0.1
   shared_preferences: ^2.0.15
 
 

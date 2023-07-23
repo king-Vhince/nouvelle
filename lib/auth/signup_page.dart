@@ -3,9 +3,9 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:nouvelle/pages/home_page.dart';
-import 'package:nouvelle/widgets/input_form.dart';
 
-import '../widgets/widgets.dart';
+import '../widgets/large_widgets/my_TextFormField.dart';
+import '../widgets/small_widgets.dart';
 import '../auth/login_page.dart';
 import '../service/auth_service.dart';
 import '../service/helper_functions.dart';

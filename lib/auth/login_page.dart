@@ -4,16 +4,12 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:nouvelle/pages/home_page.dart';
-import 'package:nouvelle/widgets/input_form.dart';
-// import 'package:testingapp/service/database_service.dart';
-// import 'package:testingapp/widget/persistent_bottom_navbar.dart';
-// import '../service/auth_service.dart';
-import '../service/helper_functions.dart';
-// import 'package:testingapp/auth/signup_page.dart';
 
-// import '../pages/home_page.dart';
+import '../service/helper_functions.dart';
+
 import '../service/database_service.dart';
-import '../widgets/widgets.dart';
+import '../widgets/large_widgets/my_TextFormField.dart';
+import '../widgets/small_widgets.dart';
 import 'signup_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -207,7 +203,6 @@ class _LoginPageState extends State<LoginPage> {
                                 style: TextStyle(
                                   color: Color(0xFFF07631),
                                   fontSize: 13,
-                                  
                                 ),
                               ),
                             ),
@@ -232,17 +227,14 @@ class _LoginPageState extends State<LoginPage> {
                                         colors: [
                                           Color(0xFFA909A1),
                                           Color.fromARGB(255, 73, 122, 212),
-                                          
                                         ],
                                         begin: Alignment.bottomLeft,
                                         end: Alignment.topRight,
                                       )
                                     : const LinearGradient(
                                         colors: [
-                                          
                                           Color.fromARGB(255, 240, 202, 238),
                                           Color.fromARGB(255, 206, 218, 241),
-                                          
                                         ],
                                         begin: Alignment.bottomLeft,
                                         end: Alignment.topRight,
@@ -250,7 +242,6 @@ class _LoginPageState extends State<LoginPage> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: ElevatedButton(
-                                
                                 onPressed: password.isNotEmpty &&
                                         email.isNotEmpty
                                     ? (() {
@@ -275,7 +266,7 @@ class _LoginPageState extends State<LoginPage> {
                                                 .saveUserLoggedInStatus(true);
                                             HelperFunction.saveUserEmailPrefs(
                                                 email);
-                                            
+
                                             nextScreenReplacement(
                                                 context, HomePage());
                                           }).onError((error, stackTrace) {
@@ -289,13 +280,10 @@ class _LoginPageState extends State<LoginPage> {
                                         }
                                       })
                                     : null,
-
-                                
                                 style: ElevatedButton.styleFrom(
                                     elevation: 0,
                                     backgroundColor:
                                         Color.fromARGB(0, 194, 51, 187),
-                                    
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(8),
                                     )),
@@ -343,7 +331,6 @@ class _LoginPageState extends State<LoginPage> {
                                 Expanded(
                                   child: Divider(
                                     color: Color.fromARGB(255, 139, 134, 139),
-                                    
                                   ),
                                 ),
                               ],
@@ -379,7 +366,6 @@ class _LoginPageState extends State<LoginPage> {
                             Container(
                               decoration: signUpOptionsBoxDec,
                               child: SizedBox(
-                                
                                 height: 43, // 8 %
                                 width: 53,
                                 child: Image.asset(
@@ -397,8 +383,7 @@ class _LoginPageState extends State<LoginPage> {
                             Container(
                               decoration: signUpOptionsBoxDec,
                               child: SizedBox(
-                                
-                                height: 43, 
+                                height: 43,
                                 width: 53,
                                 child: Image.asset(
                                   'assets/icons/Facebook_logo.png',
@@ -439,6 +424,4 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
   }
-
-  
 }
